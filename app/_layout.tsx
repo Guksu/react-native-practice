@@ -21,5 +21,6 @@ export default function RootLayout() {
 
   if (!fontsLoaded) return null;
 
-  return <Stack />;
+  // headerShow 옵션으로 헤더를 숨길 수 있음
+  return <Stack screenOptions={{ headerShown: false }} />;
 }
